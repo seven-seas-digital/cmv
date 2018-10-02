@@ -33,6 +33,8 @@ import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
+import NavButtons from '../../components/NavButtons';
+
 /* eslint-disable react/prefer-stateless-function */
 export class HomePage extends React.PureComponent {
   /**
@@ -63,6 +65,7 @@ export class HomePage extends React.PureComponent {
         </Helmet>
         <div>
           <CenteredSection>
+            <NavButtons />
             <H2>
               <FormattedMessage {...messages.startProjectHeader} />
             </H2>

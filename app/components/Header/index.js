@@ -1,29 +1,18 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 
 import A from './A';
 import Img from './Img';
-import NavBar from './NavBar';
-import HeaderLink from './HeaderLink';
-import kiwi from '../../images/logo.svg';
-import messages from './messages';
+
+import logo from '../../images/logo.svg';
 
 /* eslint-disable react/prefer-stateless-function */
 class Header extends React.Component {
   render() {
     return (
       <div>
-        <A href="https://twitter.com/mxstbr">
-          <Img src={kiwi} alt="kiwi eye - Kiwi" />
+        <A href="#">
+          <Img src={logo} alt="logo eye - Logo" />
         </A>
-        <NavBar>
-          <HeaderLink to="/">
-            <FormattedMessage {...messages.home} />
-          </HeaderLink>
-          <HeaderLink to="/features">
-            <FormattedMessage {...messages.features} />
-          </HeaderLink>
-        </NavBar>
       </div>
     );
   }
